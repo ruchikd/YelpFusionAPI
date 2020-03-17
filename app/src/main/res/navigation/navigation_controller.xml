@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_explore_business">
+
+    <fragment
+        android:id="@+id/navigation_explore_business"
+        android:name="com.example.weedmapschallenge.UI.SearchBusinesses.View.Fragment.ExploreBusinessFragment"
+        android:label="@string/title_explore_business"
+        tools:layout="@layout/fragment_explore_business" />
+
+    <fragment
+        android:id="@+id/navigation_search_business"
+        android:name="com.example.weedmapschallenge.UI.SearchBusinesses.View.Fragment.BusinessSearchFragment"
+        android:label="@string/title_search_business"
+        tools:layout="@layout/fragment_search_business" />
+
+
+</navigation>

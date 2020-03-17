@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_refresh_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+            android:id="@+id/explore_text_view"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:hint="Search Business"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/explore_business_list_recycler_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/explore_text_view"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true">
+        </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/search_city_card_view"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:id="@+id/search_business_city_autocomplete_button"
+            android:hint="@string/search_city"
+            android:textAlignment="center"
+            android:autoSizeTextType="uniform"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/search_business_card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:layout_below="@+id/search_city_card_view"
+        android:layout_centerInParent="true">
+
+        <AutoCompleteTextView
+            android:id="@+id/search_business_autocomplete_text_view"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="@string/search_businesses"
+            android:textAlignment="center"
+            android:autoSizeTextType="uniform"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:ems="10"
+            android:imeOptions="actionSearch"
+            android:inputType="textAutoComplete|textAutoCorrect" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/business_list_recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/search_business_card_view"
+        android:layout_alignParentBottom="true">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+</RelativeLayout>

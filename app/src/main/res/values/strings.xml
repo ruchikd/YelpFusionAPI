@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WeedMapsChallenge</string>
+    <string name="search_businesses">Search Businesses</string>
+    <string name="search_city">Search City</string>
+    <string name="enable_gps">Please enable your gps</string>
+    <string name="permission_request">App requires location permission</string>
+    <string name="columns_count">2</string>
+    <string name="row_count">3</string>
+    <string name="title_search_business">Search</string>
+    <string name="title_explore_business">Explore</string>
+</resources>
