@@ -4,3 +4,5 @@ Used Yelp Fusion API (https://www.yelp.com/developers/documentation/v3) to imple
 1. Local Businesses lookup
 2. Search specific local businesses
 3. Search city and find businesses
+
+![Yelp Fusion API Demo](demo/YelpFusionAPIChallenge.gif)
